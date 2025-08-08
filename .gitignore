@@ -1,0 +1,9 @@
+# ignore venv/
+venv/
+
+# exclude __pycache__ directories
+__pycache__/
+
+# ignore Python bytecode files
+*.pyc
+*.pyo
