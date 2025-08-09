@@ -33,5 +33,10 @@ async def header_greet(who:str = Header()):
 def get_agent(user_agent:str = Header()):
     return user_agent
 
+# test status code
+@app.get("/happy")
+def happy(status_code=200):
+    return ":)"
+
 if __name__ == "__main__":
     uvicorn.run("hello:app", reload=True)
