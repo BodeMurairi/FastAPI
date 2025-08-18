@@ -7,3 +7,5 @@ uvicorn
 httpie
 requests
 httpx
+starlette
+pydantic
