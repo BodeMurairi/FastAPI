@@ -9,3 +9,6 @@ __pycache__/
 *.pyc
 *.pyo
 *cache
+
+# remove jupyter-notebook
+.ipynb_checkpoints/
