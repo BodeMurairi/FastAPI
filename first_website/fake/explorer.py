@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from model.creature import Explorer
+from model.explorer import Explorer
 
 _explorers = [
     Explorer(name ="Claude Hande",

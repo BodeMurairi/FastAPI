@@ -20,26 +20,42 @@ def get_all() -> list[Creature]:
     "get all creatures"
     return _creatures
 
-def get_one(name:str) -> Creature:
+def get_one(name:str) -> Creature|None:
     """get one creature"""
-    for _creature in _creatures|None:
+    for _creature in _creatures:
         if _creature.name == name:
             return _creature
         else:
             return None
 
-def create(creature: Creature) -> Creature:
+def create(creature: Creature) -> Creature|None:
     """Add a creature"""
-   return creature
+    for _creature in _creatures:
+        if _creature == creature:
+            return _creature
+        else:
+            return None
 
-def modify(creature: Creature) -> Creature:
-   """Partially modify a creature"""
-   return creature
+def modify_creature(creature: Creature) -> Creature|None:
+    """Add a creature"""
+    for _creature in _creatures:
+        if _creature == creature:
+            return _creature
+        else:
+            return None
 
-def replace(creature: Creature) -> Creature:
-   """Completely replace a creature"""
-   return creature
+def replace_creature(creature: Creature) -> Creature|None:
+    """Add a creature"""
+    for _creature in _creatures:
+        if _creature == creature:
+            return _creature
+        else:
+            return None
 
-def delete(name: str):
-    """Delete a creature; return None if it existed"""
-    return None
+def delete_creature(creature: Creature) -> Creature|None:
+    """Add a creature"""
+    for _creature in _creatures:
+        if _creature == creature:
+            return _creature
+        else:
+            return None
