@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from typing import List, Dict
-from models.creature import Creature
+from model.creature import Creature
 import fake.creature as fake_creature
 
 def get_all_creatures() -> List[Creature]:
