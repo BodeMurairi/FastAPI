@@ -18,4 +18,4 @@ def get_thing(thing:str):
     return f"echoing {thing}"
 
 if __name__ == "__main__":
-    uvicorn.run("web.main:app", reload=True)
+    uvicorn.run("main:app", reload=True)
