@@ -9,3 +9,6 @@ requests
 httpx
 starlette
 pydantic
+python-jose[cryptography]
+passlib
+python-multipart
